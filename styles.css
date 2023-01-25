@@ -1,0 +1,36 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+:root{
+    --c1:#1C315E;
+    --c2:#227C70;
+    --c3:#88A47C;
+    --c4:#E6E2C3; 
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-color: var(--c1);
+}
+#puntos{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    border-width: 10px;
+    border-color: #FFB200;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+#tarjeta{
+    display: none;
+}
