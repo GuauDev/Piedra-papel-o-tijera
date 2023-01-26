@@ -5,29 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piedra , papel o tijera</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@1,900&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
    
     <main>
+        <h1>Piedra papel o tijera</h1>
         <section id="ataques">
             <div id="puntos">
                 <p class="puntos-jugadores">PC:<span id="puntos-jugador">0</span></p>
                 <p class="puntos-jugadores">YOU <span id="puntos-enemigo">0</span></p>
             </div>
-            <h1>Piedra papel o tijera</h1>
+            
             <div id="botones">
-                <button>Piedra</button>
-                <button>Papel</button>
-                <button>tijera</button>
+                <button class="boton">Piedra</button>
+                <button class="boton">Papel</button>
+                <button class="boton">tijera</button>
             </div>
         </section>
         <section id="tarjeta">
             <p id="mensaje">Tu escogiste <span id="eleccion-jugador">piedra</span> y pc escogio <span id="eleccion-enemigo">papel</span> tu <span id="resultado">ganaste</span></p>
-            <button id="boton-ok">OK</button>
+            <div>
+                <button id="boton-ok">OK</button>
+            </div>
         </section>
     </main>
 </body>
