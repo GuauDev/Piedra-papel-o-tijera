@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,17 +21,18 @@
             </div>
             
             <div id="botones">
-                <button class="boton">Piedra</button>
-                <button class="boton">Papel</button>
-                <button class="boton">tijera</button>
+                <button onclick="piedra()" class="boton">Piedra</button>
+                <button onclick="papel()" class="boton">Papel</button>
+                <button onclick="tijera()"class="boton">tijera</button>
             </div>
         </section>
         <section id="tarjeta">
             <p id="mensaje">Tu escogiste <span id="eleccion-jugador">piedra</span> y pc escogio <span id="eleccion-enemigo">papel</span> tu <span id="resultado">ganaste</span></p>
             <div>
-                <button id="boton-ok">OK</button>
+                <button onclick="ok()"id="boton-ok">OK</button>
             </div>
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>

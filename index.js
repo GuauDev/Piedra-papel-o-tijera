@@ -1,10 +1,15 @@
 var resultado
-let jugadorEnLetras
-let enemigoEnLetras
+let jugadorEnLetras=''
+let enemigoEnLetras=''
+var puntosJugador=0
+var puntosEnemigo=0
 const spanResultado = document.getElementById('resultado')
 const spanEleccionJugador = document.getElementById('eleccion-jugador')
 const spanEleccionEnemigo = document.getElementById('eleccion-enemigo')
 const tarjeta = document.getElementById('tarjeta')
+const spanPuntosJugador=document.getElementById('puntos-jugador')
+const spanPuntosEnemigo=document.getElementById('puntos-enemigo')
+
 
 function ataqueEnLetras(ataque) {
     if(ataque==1){
@@ -21,6 +26,8 @@ function mostrar(jugador,enemigo,resultado){
     spanEleccionJugador.innerHTML = jugador
     spanEleccionEnemigo.innerHTML = enemigo
     spanResultado.innerHTML = resultado
+    spanPuntosJugador.innerHTML=puntosJugador
+    spanPuntosEnemigo.innerHTML=puntosEnemigo
 }
 
 function aleatorio(min,max){
@@ -51,12 +58,17 @@ function combate(jugador) {
         resultado='empate'
     }else if(jugador == 1 && enemigo == 3){
         resultado='ganaste'
+        puntosJugador++
     }else if (jugador == 2 && enemigo == 1){
         resultado='ganaste'
+        puntosJugador++
     }else if (jugador == 3 && enemigo == 2){
         resultado='ganaste'
+        puntosJugador++
     }else{
         resultado='perdiste'
+        puntosEnemigo++
+
     }
     mostrar(jugadorEnLetras, enemigoEnLetras, resultado)
 }
