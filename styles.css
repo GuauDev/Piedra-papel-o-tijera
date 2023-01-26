@@ -1,9 +1,12 @@
 *{
     margin: 0; 
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
+       
 }
-
+#ataques{
+    opacity: 100%;
+}
 :root{
     --c1:#1C315E;
     --c2:#227C70;
@@ -16,6 +19,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 body{
     background-color: var(--c1);
@@ -25,12 +29,77 @@ body{
     top: 0;
     right: 0;
     margin: 20px;
-    border-width: 10px;
+    border-width: 5px;
     border-color: #FFB200;
-    border-radius: 10px;
+    border-style: solid;
+    border-radius: 25%;
     padding: 10px;
-    
+    color:var(--c2);
 }
 #tarjeta{
     display: none;
+    width: 300px;
+    height: 250px;
+    background-color: rgb(26, 28, 26);
+    border: 0;
+    border-radius: 10px;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.1rem;
+    opacity: 1;
+}
+#tarjeta #boton-ok{
+    background-color: rgb(209,99,89);
+    height: 30px;
+    width: 30px;
+    border-color: transparent;
+    border-radius: 2px;
+    color: wheat;
+}
+#tarjeta img{
+    height: 40px;
+    width: 40px;
+    
+}
+#tarjeta div{
+    display: flex;
+    justify-content: flex-end;
+}
+#tarjeta #mensaje{
+    color:#ffe1ff;
+    font-family: 'Roboto', sans-serif;
+}
+#botones .boton{
+    background:transparent;
+    border:2px var(--c3) solid;
+    border-radius: 10px;
+    padding: 20px 10px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--c3);
+    transition: .3s;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    height: 64px;
+    align-items: center;
+}
+#botones{
+    justify-content: center;
+    gap: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    position: fixed;
+    top: 20%;
+    font-family: 'MuseoModerno', cursive;
+    color: var(--c4);
+    font-size: 2.5rem;
+}
+#botones .boton:hover{
+    width: 84px;
+    height: 84px;
 }
